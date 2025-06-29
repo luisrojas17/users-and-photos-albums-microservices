@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "ac2d8c72-895c-4f2c-b9db-7e548bff87e3",
+		"name": "Amazon ECS+Fargate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "151325"
+	},
+	"item": [
+		{
+			"name": "localhost:8081/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\":\"Sergey\",\n  \"lastName\":\"Kargopolov\",\n  \"email\":\"test1@test.com\",\n  \"password\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"test1@test.com\",\n\t\"password\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/users/27a1388c-6b4f-4d01-9130-893b1d02ab60",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyN2ExMzg4Yy02YjRmLTRkMDEtOTEzMC04OTNiMWQwMmFiNjAiLCJleHAiOjE3MzMzMDE0NjN9.-F0jXeLsmQF3oPPcKmQYyu-_D_BIshF1bDEtL_aQEl3rl6huWpZO_ZHcLaHSL9i-7gwhHVQL2ER78lTS_XpWRQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8081/users/27a1388c-6b4f-4d01-9130-893b1d02ab60",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"27a1388c-6b4f-4d01-9130-893b1d02ab60"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
