@@ -2,5 +2,5 @@
 
 This repository contains a couple of microservices:
 
-1.- users-microservice
-2.- photo-albums-microservice
+1. users-microservice
+2. photo-albums-microservice
