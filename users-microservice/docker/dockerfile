@@ -1,4 +1,4 @@
 FROM openjdk:17-alpine
 VOLUME /tmp 
-COPY target/users-microservice-1.0.0.jar users-microservice-1.0.0.jar
+COPY ../target/users-microservice-1.0.0.jar users-microservice-1.0.0.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/users-microservice-1.0.0.jar"]
