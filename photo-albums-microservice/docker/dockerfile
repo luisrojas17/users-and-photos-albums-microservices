@@ -1,0 +1,4 @@
+FROM openjdk:17-alpine
+VOLUME /tmp 
+COPY target/photo-albums-microservice-1.0.0.jar photo-albums-microservice-1.0.0.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/photo-albums-microservice-1.0.0.jar"]
